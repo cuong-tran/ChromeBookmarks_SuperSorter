@@ -1,0 +1,124 @@
+<html>
+<head>
+    <title>SuperSorter options</title>
+    <script src="jquery-2.0.2.min.js" type="text/javascript"></script>
+    <script src="constants.js" type="text/javascript"></script>
+    <script src="BookmarkSortPrefs.js" type="text/javascript"></script>
+    <script src="util.js" type="text/javascript"></script>
+    <script src="prefsHelper.js" type="text/javascript"></script>
+    <script src="options.js" type="text/javascript"></script>
+    <script src="sorter2.js" type="text/javascript"></script>
+    <script src="sequence.js" type="text/javascript"></script>
+    <script src="deduper.js" type="text/javascript"></script>
+    <script src="mathuuid.js" type="text/javascript"></script>
+    <script src="optionsPage.js" type="text/javascript"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<h1>
+    <img alt="SuperSorter icon" height="32" src="go-jump-32.png"
+         width="32"/>&nbsp;SuperSorter options
+</h1>
+<p>
+    <label for="sortorder">Bookmark sort order:</label> <select
+        id="sortorder">
+    <option id="sortorder_option_ascending" selected value="ascending">Ascending</option>
+    <option id="sortorder_option_descending" value="descending">Descending</option>
+</select>
+</p>
+<p>
+    <input id="autoSort" type="checkbox"/><label for="autoSort">Sort
+    automatically (no need to click the button).</label>
+</p>
+<p>
+    <input checked id="foldersFirst" type="checkbox"/><label
+        for="foldersFirst">Put folders before bookmarks.</label>
+<p>
+    <input id="deleteEmptyFolders" type="checkbox"/><label
+        for="deleteEmptyFolders">Delete empty folders.</label>
+</p>
+<p>
+    <input checked id="mergeNeighbours" type="checkbox"/><label
+        for="mergeNeighbours">Merge neighbouring folders that have
+    the same name.</label>
+</p>
+<p>
+    <input checked id="deDupeLocal" type="checkbox"/><label
+        for="deDupeLocal">Delete duplicate bookmarks within each
+    folder.</label>
+</p>
+<p>
+    <input id="caseSensitive" type="checkbox"/><label
+        for="caseSensitive">Use case-sensitive name comparisons.</label>
+</p>
+<p>
+    <input id="ignoreBookmarksBar" type="checkbox"/><label
+        for="ignoreBookmarksBar">Ignore Bookmarks Bar.</label>
+</p>
+<p>
+    <button id="saveButton" title="Save these settings.">Save
+        options
+    </button>
+    &nbsp;
+    <button id="restoreDefaultsButton"
+            title="Set all options back to their initial state and save them.">Restore
+        defaults
+    </button>
+    &nbsp; <span id="status"></span>
+</p>
+
+
+<p>
+    <button id="deDupeGlobalButton"
+            title="Search the whole bookmarks tree for duplicates and display them below.">Find
+        all duplicates now
+    </button>
+    &nbsp;<span id="deDupeLoaderSpan"><img
+        alt="Animation" id="deDupeLoaderImage"
+        src="loader_yellow_on_blue.gif"/>&nbsp;Working... </span>
+</p>
+
+<div id="dupeDisplay">
+    <div id="deDupeButtons">
+
+        <button id="selectAllButFirstInEachGroup"
+                title="Select all items except the first in each group of duplicates.">
+            Select all but first
+        </button>
+
+        <button id="selectAllButLastInEachGroup"
+                title="Select all items except the last in each group of duplicates.">
+            Select all but last
+        </button>
+
+        <button id="invertSelection"
+                title="Deselect everything that is currently selected, and select everything that is not currently selected.">
+            Invert
+            selection
+        </button>
+
+        <button id="refreshDuplicates"
+                title="Refresh the list, clearing all selections.">Refresh
+            + deselect
+        </button>
+        <button id="globalDeDupeButton" title="Delete all checked items.">Delete
+            selected
+        </button>
+
+        <span id="confirmCancelButtons" style="visibility: hidden;">
+				<button id="confirmButton" title="Delete them now!">Confirm</button>
+				<button id="cancelButton" title="Don't delete.">Cancel</button>
+			</span>
+        <button id="hideButton" title="Hide the duplicates display.">Close</button>
+    </div>
+
+</div>
+
+
+<div id="thisIsTheOptionsPage" style="display: none;"></div>
+
+
+</body>
+</html>

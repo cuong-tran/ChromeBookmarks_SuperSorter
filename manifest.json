@@ -1,0 +1,23 @@
+{
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": "go-jump-48.png",
+    "default_title": "Sort bookmarks"
+  },
+  "description": "Clean up your bookmark mess! Sort bookmarks recursively, delete duplicates, merge folders, sort automatically, etc.",
+  "icons": {
+    "128": "go-jump-128.png",
+    "48": "go-jump-48.png"
+  },
+  "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDF1swJpQvE8+XibLSFaKmjmPzwOm4Trk3/Dvec8QXugVCq8h73D1NyVBLinLSG+5h1gelNEXB/bKq9ghnJ/CAmMEa2ZYN34InxLlvRxhCwkMt1DhvmUp+lBKc+ioLh5KqjYebfZ0XDLgau1f1wvqOYuTRtdfrhv0Lr8FhAh7zeqwIDAQAB",
+  "manifest_version": 2,
+  "name": "SuperSorter",
+  "options_page": "options.html",
+  "permissions": [
+    "bookmarks"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "0.4.4"
+}

@@ -1,0 +1,135 @@
+/*
+272836	- dark blue
+6264cf	- blue-purple
+5a7e9c	- blue-grey
+a8998b	- browny
+cf8662	- peachy
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    background: #464E60;
+    color: white;
+}
+
+div {
+    padding: 3px;
+    display: block;
+    width: 15em;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: yellow;
+}
+
+h1 img {
+    vertical-align: text-bottom;
+}
+
+.messageOk {
+    color: #yellow;
+    font-weight: bold;
+}
+
+.messageError {
+    color: red;
+    font-weight: bold;
+}
+
+select {
+    padding: 1px;
+    border-radius: 2px;
+    border-style: none;
+}
+
+button {
+    padding: 2px 3px;
+    border-radius: 2px;
+    border-style: none;
+}
+
+input {
+    margin: 0 10px 0 5px;
+}
+
+a {
+    color: #7dafd9;
+}
+
+a:visited {
+    color: #408ccb;
+}
+
+a:hover {
+    color: #9ecbf2;
+}
+
+#status {
+    display: inline;
+}
+
+div#dupeDisplay {
+    width: 95%;
+    visibility: hidden;
+}
+
+div#deDupeButtons {
+    width: 100%;
+    background-color: #bbb;
+    padding: 0 7px;
+    margin: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+div#deDupeButtons button {
+    margin: 0;
+    padding: 4px;
+    background-color: #bbb;
+    cursor: hand;
+    margin-right: 1em;
+}
+
+button#hideButton {
+    float: right;
+}
+
+div.duplicateListDiv {
+    width: 100%;
+    height: 30em;
+    overflow: auto;
+    background-color: #343a47;
+    border-bottom-left-radius: 6px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+div.duplicateListDiv ul {
+    margin-bottom: 1.4em;
+    margin-top: .5em;
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.4em;
+}
+
+div.duplicateListDiv ul li {
+    padding-left: 1.8em;
+    text-indent: -1.8em;
+    margin-left: 0;
+}
+
+button#confirmButton {
+    color: #006600;
+}
+
+button#cancelButton {
+    color: red;
+}
+
+span#deDupeLoaderSpan {
+    visibility: hidden;
+    color: yellow;
+}
